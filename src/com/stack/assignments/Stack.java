@@ -1,4 +1,4 @@
-//Use Case 1 is to create a Stack of 56-->30-->70. (Use LinkedList to do the Stack operations)
+//Use Case 1 is to create a Stack of 56-->30-->70 where 56 is at the top of Stack. (Use LinkedList to do the Stack operations)
 
 package com.stack.assignments;
 
