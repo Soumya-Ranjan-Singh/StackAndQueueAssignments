@@ -1,4 +1,5 @@
 //Use Case 3 is to create a Queue of 56-->30-->70.
+//Use Case 4 is to dequeue from the beginning.
 
 package com.queue.assignment;
 
@@ -20,6 +21,12 @@ public class Queue {
     public Object peak()
     {
         return list.getFirst();
+    }
+
+    //Dequeue the top value
+    public Object poll()
+    {
+        return list.removeFirst();
     }
 
     //Printing the values of Queue
@@ -49,11 +56,19 @@ public class Queue {
         queue.enqueue(30);
         queue.enqueue(70);
 
-        //Printing the top element of stack
-        System.out.println("Top element of Queue is : "+queue.peak());
-
         //Printing the total stack
+        System.out.println("Printing the original Queue");
         queue.printQueue();
+
+        //Printing top element and dequeue it from Queue unless it is empty
+        while (!list.isEmpty())
+        {
+            System.out.println("Top element present in Queue is : "+queue.peak());
+            System.out.println("Dequeue top element from Queue : "+queue.poll());
+            System.out.println("Printing the Queue");
+            queue.printQueue();
+            System.out.println();
+        }
 
     }
 }
