@@ -43,7 +43,7 @@ public class Stack {
         }
         else
         {
-            System.out.println("List is empty");
+            System.out.println("Stack is empty");
         }
         System.out.println();
     }
@@ -64,7 +64,7 @@ public class Stack {
         while (!list.isEmpty())
         {
             System.out.println("Top element present in Stack is : "+s.peak());
-            System.out.println("Removing top element from Stock : "+s.pop());
+            System.out.println("Removing top element from Stack : "+s.pop());
             System.out.println("Printing the Stack");
             s.printStack();
             System.out.println();
